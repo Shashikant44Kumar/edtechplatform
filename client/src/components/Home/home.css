@@ -1,0 +1,67 @@
+.container{
+    height:100vh;
+    padding: 5rem;
+    box-sizing: border-box;
+}
+.header-image img{
+    border-radius: 20px;
+    opacity: 0.8;
+}
+
+.vector-graphics{
+    filter: drop-shadow(0 40px 10px rgba(0,0,0,0.3));
+    animation: vectorAnimation 1.5s infinite ease-in-out alternate;
+}
+@keyframes vectorAnimation{
+    to{
+        transform: translate(-10px);
+    }
+}
+
+.brandsBanner > svg{
+    color: white;
+    font-size: 3rem;
+    transition: color 0.5s;
+}
+.brandsBanner > svg:hover{
+    color:rgb(225,221,0)
+}
+
+.container2{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 video{
+    border: 1px solid rgba(0,0,0,0.18);
+    box-shadow: 0 0 10px rgba(51, 3, 3, 0.18);
+    width: 60%;
+    border-radius: 5px;
+    outline: none;
+}
+
+@media  screen and (max-width:600px) {
+    .container2{
+        height: unset; 
+        padding: 15vh 0;
+    }
+    .container2 video{
+        width: 100%;  
+    }
+    .vector-graphics img{
+        width: 100%;
+        height: unset;
+    }
+}
+
+.course{
+    margin-bottom: 1.5rem;
+    transition: all 0.5s;
+    width: 250px;
+}
+.course:hover{
+    transform: translateY(-10px);
+}
